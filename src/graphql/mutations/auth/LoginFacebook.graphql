@@ -1,0 +1,5 @@
+mutation LoginFacebook($userId: String!, $accessToken: String!) {
+  loginFacebook(userId: $userId, accessToken: $accessToken) {
+    ...userMutationResponse
+  }
+}

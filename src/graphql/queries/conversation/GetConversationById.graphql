@@ -1,0 +1,10 @@
+query GetConversationById($conversationId: String!) {
+  getConversationById(conversationId: $conversationId) {
+    code
+    success
+    message
+    conversation {
+      ...conversation
+    }
+  }
+}

@@ -1,0 +1,14 @@
+fragment post on Post {
+  _id
+  caption
+  photo
+  commentCounts
+  reactions {
+    ...baseUser
+  }
+  user {
+    ...user
+  }
+  createdAt
+  updatedAt
+}

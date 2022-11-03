@@ -1,0 +1,19 @@
+fragment conversation on Conversation {
+  _id
+  creators {
+    ...baseUser
+  }
+  members {
+    ...baseUser
+  }
+  lastMessage {
+    _id
+    text
+    createdAt
+    seen
+    user {
+      ...baseUser
+    }
+  }
+  createdAt
+}

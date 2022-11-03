@@ -1,0 +1,10 @@
+mutation FollowUser($followType: FollowType!, $userId: String!) {
+  followUser(followType: $followType, userId: $userId) {
+    code
+    success
+    message
+    user {
+      ...user
+    }
+  }
+}

@@ -1,0 +1,7 @@
+mutation DeleteChat($conversationId: String!) {
+  deleteChat(conversationId: $conversationId) {
+    code
+    success
+    message
+  }
+}

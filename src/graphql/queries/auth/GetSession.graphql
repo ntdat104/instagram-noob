@@ -1,0 +1,10 @@
+query GetSession {
+  getSession {
+    code
+    success
+    accessToken
+    user {
+      ...user
+    }
+  }
+}

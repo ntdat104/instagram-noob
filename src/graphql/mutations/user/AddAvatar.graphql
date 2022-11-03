@@ -1,0 +1,7 @@
+mutation AddAvatar($base64Photo: String!) {
+  addAvatar(base64Photo: $base64Photo) {
+    code
+    success
+    avatar
+  }
+}

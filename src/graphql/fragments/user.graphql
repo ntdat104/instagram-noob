@@ -1,0 +1,17 @@
+fragment baseUser on User {
+  _id
+  email
+  username
+  account
+  avatar
+}
+
+fragment user on User {
+  ...baseUser
+  followers {
+    ...baseUser
+  }
+  following {
+    ...baseUser
+  }
+}

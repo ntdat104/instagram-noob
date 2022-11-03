@@ -1,0 +1,5 @@
+mutation LoginGoogle($clientId: String!, $tokenId: String!) {
+  loginGoogle(clientId: $clientId, tokenId: $tokenId) {
+    ...userMutationResponse
+  }
+}

@@ -1,0 +1,7 @@
+mutation ReadMessage($messageId: ID!) {
+  readMessage(messageId: $messageId) {
+    success
+    code
+    message
+  }
+}

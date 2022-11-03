@@ -1,0 +1,11 @@
+query GetMessages($limit: Int!, $conversationId: ID!, $cursor: String) {
+  getMessages(limit: $limit, conversationId: $conversationId, cursor: $cursor) {
+    code
+    success
+    cursor
+    hasMore
+    messages {
+      ...message
+    }
+  }
+}

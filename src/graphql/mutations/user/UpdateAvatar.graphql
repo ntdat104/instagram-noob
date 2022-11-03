@@ -1,0 +1,7 @@
+mutation UpdateAvatar($oldPhotoUrl: String!, $base64Photo: String!) {
+  updateAvatar(oldPhotoUrl: $oldPhotoUrl, base64Photo: $base64Photo) {
+    code
+    success
+    avatar
+  }
+}

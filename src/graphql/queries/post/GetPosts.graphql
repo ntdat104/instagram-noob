@@ -1,0 +1,12 @@
+query GetPosts($cursor: String, $limit: Int!, $query: QueryPostsInput) {
+  getPosts(cursor: $cursor, limit: $limit, query: $query) {
+    code
+    message
+    success
+    posts {
+      ...post
+    }
+    cursor
+    hasMore
+  }
+}

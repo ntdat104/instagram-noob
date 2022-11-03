@@ -1,0 +1,8 @@
+export const LIMITS = {
+  POSTS: 5,
+  COMMENTS: 5,
+  SEARCH_USER: 20,
+  CONVERSATIONS: 10,
+  MESSAGES: 15,
+  SUGGESTED_PEOPLE: 15,
+} as const;

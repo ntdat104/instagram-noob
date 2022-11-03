@@ -1,0 +1,11 @@
+query GetProfile($username: String!) {
+  getProfile(username: $username) {
+    code
+    success
+    message
+    user {
+      ...user
+    }
+    postCounts
+  }
+}

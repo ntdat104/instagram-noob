@@ -1,0 +1,7 @@
+mutation ReactPost($reaction: ReactionType!, $postId: String!) {
+  reactPost(reaction: $reaction, postId: $postId) {
+    code
+    success
+    message
+  }
+}

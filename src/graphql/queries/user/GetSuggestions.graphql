@@ -1,0 +1,10 @@
+query GetSuggestions($limit: Int!, $page: Int!) {
+  getSuggestions(limit: $limit, page: $page) {
+    code
+    success
+    nextPage
+    users {
+      ...user
+    }
+  }
+}

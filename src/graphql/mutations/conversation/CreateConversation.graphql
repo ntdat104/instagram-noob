@@ -1,0 +1,10 @@
+mutation CreateConversation($receiverId: String!) {
+  createConversation(receiverId: $receiverId) {
+    code
+    success
+    message
+    conversation {
+      ...conversation
+    }
+  }
+}

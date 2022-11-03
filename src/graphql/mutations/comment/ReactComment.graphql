@@ -1,0 +1,7 @@
+mutation ReactComment($reaction: ReactionType!, $commentId: String!) {
+  reactComment(reaction: $reaction, commentId: $commentId) {
+    code
+    success
+    message
+  }
+}

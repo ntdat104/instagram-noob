@@ -1,0 +1,11 @@
+fragment userMutationResponse on UserMutationResponse {
+  code
+  success
+  message
+  user {
+    ...user
+  }
+  errors {
+    ...fieldError
+  }
+}

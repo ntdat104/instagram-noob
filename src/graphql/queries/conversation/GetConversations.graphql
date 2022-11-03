@@ -1,0 +1,12 @@
+query GetConversations($limit: Int!, $cursor: String) {
+  getConversations(limit: $limit, cursor: $cursor) {
+    code
+    success
+    message
+    cursor
+    hasMore
+    conversations {
+      ...conversation
+    }
+  }
+}

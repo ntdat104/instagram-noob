@@ -1,0 +1,8 @@
+fragment postMutationResponse on PostMutationResponse {
+  code
+  success
+  message
+  post {
+    ...post
+  }
+}
